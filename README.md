@@ -79,16 +79,16 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python3 -m torch.distributed.launch --nproc_per_nod
 Explanation of parameters:
 
 ```
---backbone：		Can be choosed in [svtr_tiny, svtr_small, svtr_base]
---trans_ln：		The layer of number in GLRM. We set to 2 in LPV-Tiny and 3 in LPV-Small and  LPV-Base.
---exp_name：		The name of experiment folder to save logs and checkpoints.
+--backbone：	Can be choosed in [svtr_tiny, svtr_small, svtr_base]
+--trans_ln：	The layer of number in GLRM. We set to 2 in LPV-Tiny and 3 in LPV-Small and  LPV-Base.
+--exp_name：	The name of experiment folder to save logs and checkpoints.
 --batch_size：	The batch size of each GPU. Default is 96.
---num_iter：		The total steps in training. Default is 413940, which equals to 10 epoches when training on MJ and ST.
+--num_iter：	The total steps in training. Default is 413940, which equals to 10 epoches when training on MJ and ST.
 --drop_iter：	The drop position. Default is 240000.
---mask：			Whether to use mask in GLRM.
+--mask：	Whether to use mask in GLRM.
 --saved_model：	Resume the training.
---imgH:			The height of input image.
---imgW:			The width of input image.
+--imgH:		The height of input image.
+--imgW:		The width of input image.
 ```
 
 **The image size is set to 48*160 for LPV-Base, so it is necessary to add two parameters: --imgH 48 and --imgW 160 when training.**
@@ -105,12 +105,12 @@ CUDA_VISIBLE_DEVICES=0 python test_final.py --benchmark_all_eval \
 Explanation of parameters:
 
 ```
---exp_name：		The name of experiment folder.
---backbone：		Can be choosed in [svtr_tiny, svtr_small, svtr_base]
---trans_ln：		The layer of number in GLRM. We set to 2 in LPV-Tiny and 3 in LPV-Small and  LPV-Base.
+--exp_name：	The name of experiment folder.
+--backbone：	Can be choosed in [svtr_tiny, svtr_small, svtr_base]
+--trans_ln：	The layer of number in GLRM. We set to 2 in LPV-Tiny and 3 in LPV-Small and  LPV-Base.
 --model_dir：	The direction of the checkpoint.
 --eval_data：	The direction of the evaluated data.
---fast_acc：		To test on six benchmarks.
+--fast_acc：	To test on six benchmarks.
 ```
 
 ## Citation
