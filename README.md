@@ -4,7 +4,7 @@ The official code of [LPV](https://arxiv.org/abs/2305.05140v2)
 
 LPV proposes a Cascade Position Attention (CPA) strategy and a Global Linguistic Reconstruction Module to aggregate linguistic information in both query and features. The pipeline is shown in the following figure.
 
-![image-20230818213054557](images\pipeline.png)
+![pipeline](images/pipeline.png)
 
 ## ToDo List
 
