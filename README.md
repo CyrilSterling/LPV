@@ -11,7 +11,7 @@ LPV proposes a Cascade Position Attention (CPA) strategy and a Global Linguistic
 - [x] Release code
 - [x] Document for Installation
 - [x] Document for testing and training
-- [ ] Trained models
+- [x] Trained models
 - [ ] Chinese implementation
 
 ## Install requirements
@@ -53,7 +53,7 @@ Available model weights:
 
 | Tiny | Small  | Base |
 | :---: | :---: | :---: |
-|  -   |   -   |  -   |
+| [best_tiny_model](https://drive.google.com/file/d/1nz4kRl6rVzaExGMiFmIED4rYKsjEJ48x/view?usp=sharing) |   [best_small_model](https://drive.google.com/file/d/1uNb4QSyRp4ClXpOJj1iMBWXIbvl2-YTu/view?usp=sharing)   | [best_base_model](https://drive.google.com/file/d/1nE-yQL25MPFObgn6Kpdy6p2YbepYw--6/view?usp=sharing) |
 
 ## Train
 
